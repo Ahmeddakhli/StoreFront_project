@@ -7,8 +7,7 @@
     "test": "db-migrate db:create storefront_test && db-migrate --env test up && ENV=test jasmine-ts && db-migrate --env test down && db-migrate db:drop storefront_test",
     "dev": "db-migrate up && jasmine-ts && db-migrate down",
     "start": "ts-node src/server.ts",
-    "watch": "tsc-watch --esModuleInterop src/server.ts --outDir ./dist --onSuccess 'node ./dist/server.js'",
-
+    "watch": "tsc-watch --esModuleInterop src/server.ts --outDir ./dist --onSuccess 'node ./dist/server.js'"
   },
   "keywords": [],
   "author": "Trung Vo",
